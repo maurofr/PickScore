@@ -104,7 +104,7 @@ def main(cfg: DictConfig) -> None:
         "slurm_cpus_per_task": 4,
         "slurm_time": cfg.slurm.time_limit,
         "stderr_to_stdout": True,
-        "slurm_mem": "0",
+        "slurm_mem": "50GB",
     }
     executor.update_parameters(**slurm_kwargs)
 
