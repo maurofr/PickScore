@@ -89,7 +89,7 @@ def main(cfg: DictConfig) -> None:
 
     slurm_additional_parameters = {
         "gpus": cfg.slurm.n_processes,
-        "ntasks_per_node": cfg.slurm.n_processes,
+        "ntasks_per_node": cfg.slurm.n_processes // cfg.slurm.n_nodes,
     }
 
     if cfg.slurm.account is not None:
