@@ -101,7 +101,7 @@ def main(cfg: DictConfig) -> None:
         "slurm_job_name": cfg.slurm.job_name,
         "slurm_nodes": cfg.slurm.n_nodes,
         "slurm_additional_parameters": slurm_additional_parameters,
-        "slurm_cpus_per_task": 4,
+        "slurm_cpus_per_task": 2,
         "slurm_time": cfg.slurm.time_limit,
         "stderr_to_stdout": True,
         "slurm_mem": "50GB",
