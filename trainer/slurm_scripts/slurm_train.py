@@ -36,7 +36,7 @@ class Task:
             "CUDA_LAUNCH_BLOCKING": "0",
             "NCCL_DEBUG": "info",
             "CUDA_VISIBLE_DEVICES": "0,1,2,3,4,5,6,7",
-            "XDG_CACHE_HOME": "/fsx/yuval/.cache/",
+            "XDG_CACHE_HOME": "/home/filomen2/scratch/.cache/",
             "TOKENIZERS_PARALLELISM": "false",
             "OMP_NUM_THREADS": "1",
         })
@@ -99,12 +99,10 @@ def main(cfg: DictConfig) -> None:
 
     slurm_kwargs = {
         "slurm_job_name": cfg.slurm.job_name,
-        "slurm_partition": cfg.slurm.partition,
         "slurm_nodes": cfg.slurm.n_nodes,
         "slurm_additional_parameters": slurm_additional_parameters,
         "slurm_cpus_per_task": 12,
         "slurm_time": cfg.slurm.time_limit,
-        "slurm_exclude": cfg.slurm.exclude if cfg.slurm.exclude else "",
         "stderr_to_stdout": True,
         "slurm_mem": "50GB",
     }
