@@ -53,6 +53,7 @@ class HFImgDataset:
 
 
 if __name__ == '__main__':
+    raise ValueError("Shouldn't use this")
     path = "/media/twilightsnow/workspace/gan/AttnGAN/output/birds_attn2_2018_06_24_14_52_20/Model/netG_avg_epoch_300"
     batch_size = 16
     dataset = Dataset(path, transforms.Compose([

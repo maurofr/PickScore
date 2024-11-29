@@ -1,6 +1,6 @@
 # @package _global_
 
-output_dir: outputs/${accelerator.project_name}/clip
+output_dir: /home/filomen2/scratch/outputs/${accelerator.project_name}/clip
 
 dataset:
   batch_size: 16
