@@ -27,7 +27,7 @@ class ProcessorConfig:
 @dataclass
 class CLIPHFDatasetConfig(BaseDatasetConfig):
     _target_: str = "trainer.datasetss.clip_hf_dataset.CLIPHFDataset"
-    dataset_name: str = "yuvalkirstain/pickapic_v1"
+    dataset_name: str = "yuvalkirstain/pickapic_v2"
     dataset_config_name: str = "null"
 
     from_disk: bool = False

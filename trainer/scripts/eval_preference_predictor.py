@@ -133,7 +133,7 @@ def calc_random_scores(ds, thresholds):
 
 def main(processor_pretrained_name_or_path: str = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
          model_pretrained_name_or_path: str = "yuvalkirstain/PickScore_v1",
-         dataset_name_or_path: str = "yuvalkirstain/pickapic_v1",
+         dataset_name_or_path: str = "yuvalkirstain/pickapic_v2",
          should_load_from_disk: bool = False):
     device = "cuda:0"
 
